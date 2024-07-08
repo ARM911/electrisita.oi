@@ -82,7 +82,7 @@ section {
 #about .team-image,
 #services .service-image,
 #portfolio .portfolio-image {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 10px 0;
     border-radius: 10px;
