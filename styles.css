@@ -3,42 +3,94 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #003366; /* Azul del logo */
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    text-align: center;
+header .logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #004080; /* Azul oscuro */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0059b3; /* Azul más claro */
 }
 
 section {
     padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background: url('header-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 0;
+}
+
+#home h2 {
+    color: #ff6600; /* Naranja para el título */
+}
+
+#home button {
+    background-color: #ff6600; /* Naranja */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#home button:hover {
+    background-color: #e65c00; /* Naranja más oscuro */
+}
+
+#about .team-image,
+#services .service-image,
+#portfolio .portfolio-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background-color: #003366; /* Azul del logo */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -63,11 +115,27 @@ form input, form textarea {
 form button {
     padding: 10px;
     border: none;
-    background-color: #333;
+    background-color: #003366; /* Azul del logo */
     color: #fff;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #0059b3; /* Azul más claro */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
 }
